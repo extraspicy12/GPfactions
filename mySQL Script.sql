@@ -8,6 +8,7 @@ CREATE TABLE `factions` (
   `factionID` int(11) NOT NULL AUTO_INCREMENT,
   `factionName` varchar(45) NOT NULL,
   `factionDesc` text NOT NULL,
+  `factionSize` int(3) DEFAULT 0,
   PRIMARY KEY (`factionID`),
   UNIQUE KEY `factionID_UNIQUE` (`factionID`),
   UNIQUE KEY `factionName_UNIQUE` (`factionName`)
